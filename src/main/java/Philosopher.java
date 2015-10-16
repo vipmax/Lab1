@@ -21,19 +21,19 @@ public class Philosopher implements Runnable {
     }
 
     private void eat() {
-        if (waiter.getAccess()) {
-            fork1.get();
-            fork2.get();
-            try {
-                System.out.println("Philosopher " + Thread.currentThread().getName() + " is eating!");
+        if (!waiter.getAccess()) return;
+        fork1.get();
+        if (!waiter.getAccess()) return;
+        fork2.get();
+        try {
+            System.out.println("Philosopher " + Thread.currentThread().getName() + " is eating!");
 
-                Thread.sleep(new Random().nextInt(1000) + 1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            fork1.put();
-            fork2.put();
+            Thread.sleep(new Random().nextInt(1000) + 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        fork1.put();
+        fork2.put();
     }
 
     private void think() {
