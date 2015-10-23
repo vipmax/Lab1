@@ -10,6 +10,11 @@ public class PhilosophyRunner {
         Fork fork5 = new Fork(5);
 
         List<Fork> forks = new ArrayList<>();
+        forks.add(fork1);
+        forks.add(fork2);
+        forks.add(fork3);
+        forks.add(fork4);
+        forks.add(fork5);
         Waiter waiter = new Waiter(forks);
 
         new Thread(new Philosopher(fork5, fork1, waiter),"1").start();

@@ -1,0 +1,97 @@
+C:\Java\jdk1.8.0_60\bin\java -Didea.launcher.port=7548 "-Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.4\bin" -Dfile.encoding=windows-1251 -classpath "C:\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Java\jdk1.8.0_60\jre\lib\deploy.jar;C:\Java\jdk1.8.0_60\jre\lib\javaws.jar;C:\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Java\jdk1.8.0_60\jre\lib\jfxswt.jar;C:\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Java\jdk1.8.0_60\jre\lib\management-agent.jar;C:\Java\jdk1.8.0_60\jre\lib\plugin.jar;C:\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\access-bridge-64.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\cldrdata.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\dnsns.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\jaccess.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\jfxrt.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\localedata.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\nashorn.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\sunec.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\sunjce_provider.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\sunmscapi.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\sunpkcs11.jar;C:\Java\jdk1.8.0_60\jre\lib\ext\zipfs.jar;C:\Users\Max\IdeaProjects\Lab1\target\classes;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.4\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain PhilosophyRunner
+Philosopher 4 asked fork 3. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=false}, Fork{id=4, isUses=false}, Fork{id=5, isUses=false}] access = true
+Philosopher 2 asked fork 1. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=false}, Fork{id=4, isUses=false}, Fork{id=5, isUses=false}] access = true
+Philosopher 2 get fork 1
+Philosopher 5 asked fork 5. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=false}, Fork{id=4, isUses=false}, Fork{id=5, isUses=false}] access = true
+Philosopher 3 asked fork 3. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=false}, Fork{id=4, isUses=false}, Fork{id=5, isUses=false}] access = true
+Philosopher 5 get fork 5
+Philosopher 2 asked fork 2. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=false}, Fork{id=4, isUses=false}, Fork{id=5, isUses=false}] access = true
+Philosopher 1 asked fork 5. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=false}, Fork{id=4, isUses=false}, Fork{id=5, isUses=false}] access = true
+Philosopher 4 get fork 3
+Philosopher 1 is waiting to get fork 5
+Philosopher 4 asked fork 4. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 2
+Philosopher 5 asked fork 4. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=false}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 4 get fork 4
+Philosopher 4 is eating!
+Philosopher 3 is waiting to get fork 3
+Philosopher 5 is waiting to get fork 4
+Philosopher 2 is eating!
+Philosopher 4 put fork 3
+Philosopher 4 put fork 4
+Philosopher 3 get fork 3
+Philosopher 5 get fork 4
+Philosopher 3 asked fork 2. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=true}, Fork{id=3, isUses=true}, Fork{id=4, isUses=true}, Fork{id=5, isUses=true}] access = false
+Philosopher 3 is thinking!
+Philosopher 4 is thinking!
+Philosopher 5 is eating!
+Philosopher 2 put fork 1
+Philosopher 2 put fork 2
+Philosopher 2 is thinking!
+Philosopher 5 put fork 5
+Philosopher 5 put fork 4
+Philosopher 1 get fork 5
+Philosopher 5 is thinking!
+Philosopher 1 asked fork 1. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 1 get fork 1
+Philosopher 1 is eating!
+Philosopher 3 asked fork 3. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 3 is waiting to get fork 3
+Philosopher 4 asked fork 3. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 4 is waiting to get fork 3
+Philosopher 2 asked fork 1. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 is waiting to get fork 1
+Philosopher 1 put fork 5
+Philosopher 1 put fork 1
+Philosopher 1 is thinking!
+Philosopher 2 get fork 1
+Philosopher 2 asked fork 2. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=false}] access = true
+Philosopher 2 get fork 2
+Philosopher 2 is eating!
+Philosopher 5 asked fork 5. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=true}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=false}] access = true
+Philosopher 5 get fork 5
+Philosopher 5 asked fork 4. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=true}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = false
+Philosopher 5 is thinking!
+Philosopher 5 asked fork 5. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=true}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = false
+Philosopher 5 is thinking!
+Philosopher 2 put fork 1
+Philosopher 2 put fork 2
+Philosopher 2 is thinking!
+Philosopher 1 asked fork 5. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 1 is waiting to get fork 5
+Philosopher 5 asked fork 5. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 5 is waiting to get fork 5
+Philosopher 2 asked fork 1. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 1
+Philosopher 2 asked fork 2. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 2
+Philosopher 2 is eating!
+Philosopher 2 put fork 1
+Philosopher 2 put fork 2
+Philosopher 2 is thinking!
+Philosopher 2 asked fork 1. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 1
+Philosopher 2 asked fork 2. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 2
+Philosopher 2 is eating!
+Philosopher 2 put fork 1
+Philosopher 2 put fork 2
+Philosopher 2 is thinking!
+Philosopher 2 asked fork 1. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 1
+Philosopher 2 asked fork 2. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 2
+Philosopher 2 is eating!
+Philosopher 2 put fork 1
+Philosopher 2 put fork 2
+Philosopher 2 is thinking!
+Philosopher 2 asked fork 1. forks = [Fork{id=1, isUses=false}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 1
+Philosopher 2 asked fork 2. forks = [Fork{id=1, isUses=true}, Fork{id=2, isUses=false}, Fork{id=3, isUses=true}, Fork{id=4, isUses=false}, Fork{id=5, isUses=true}] access = true
+Philosopher 2 get fork 2
+Philosopher 2 is eating!
+Philosopher 2 put fork 1
+Philosopher 2 put fork 2
+Philosopher 2 is thinking!
+
+Process finished with exit code -1

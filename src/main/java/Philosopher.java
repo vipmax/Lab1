@@ -21,9 +21,9 @@ public class Philosopher implements Runnable {
     }
 
     private void eat() {
-        if (!waiter.getAccess()) return;
+        if (!waiter.getAccess(fork1)) return;
         fork1.get();
-        if (!waiter.getAccess()) return;
+        if (!waiter.getAccess(fork2)) return;
         fork2.get();
         try {
             System.out.println("Philosopher " + Thread.currentThread().getName() + " is eating!");

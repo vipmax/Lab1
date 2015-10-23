@@ -8,7 +8,15 @@ public class Fork {
         this.id = id;
     }
 
-    public void get(){
+    public int getId() {
+        return id;
+    }
+
+    public boolean isUses() {
+        return isUses;
+    }
+
+    public void get() {
         synchronized (this) {
             while (isUses) {
                 try {
@@ -24,11 +32,20 @@ public class Fork {
         }
     }
 
-    public synchronized void put(){
-        synchronized(this) {
+    public synchronized void put() {
+        synchronized (this) {
             System.out.println("Philosopher " + Thread.currentThread().getName() + " put fork " + id);
             isUses = false;
             notify();
         }
+    }
+
+
+    @Override
+    public String toString() {
+        return "Fork{" +
+                "id=" + id +
+                ", isUses=" + isUses +
+                '}';
     }
 }

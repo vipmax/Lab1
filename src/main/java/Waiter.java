@@ -8,7 +8,10 @@ public class Waiter {
     public Waiter(List<Fork> forks) {
         this.forks = forks;
     }
-    public boolean getAccess() {
-        return (forks.size() < 4);
+    public boolean getAccess(Fork fork) {
+        long countOfUsedForks = forks.stream().filter(f -> f.isUses()).count();
+        boolean access = countOfUsedForks < 4;
+        System.out.println("Philosopher " + Thread.currentThread().getName() + " asked fork " + fork.getId() + ". forks = " + forks + " access = " + access);
+        return access;
     }
 }
